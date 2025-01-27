@@ -1,12 +1,12 @@
 import React from "react";
 
 // Import your images (replace with actual paths)
-import refrigerationImg from "../assets/Refrigeration.jpg";
-import supermarketImg from "../assets/clock.png";
-import airConditioningImg from "../assets/clock.png";
-import heatingImg from "../assets/clock.png";
-import walkInCoolerImg from "../assets/clock.png";
-import troubleshootingImg from "../assets/clock.png";
+import refrigerationImg from "../../assets/Refrigeration.jpg";
+import supermarketImg from "../../assets/clock.png";
+import airConditioningImg from "../../assets/clock.png";
+import heatingImg from "../../assets/clock.png";
+import walkInCoolerImg from "../../assets/clock.png";
+import troubleshootingImg from "../../assets/clock.png";
 
 const ServicesSection = () => {
   return (

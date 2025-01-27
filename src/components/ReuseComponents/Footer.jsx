@@ -1,10 +1,16 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Social media icons
+import Icon from './Icon';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-black py-12">
       <div className="container mx-auto px-4">
+        {/* Logo Section */}
+        <div className="flex justify-center mb-8">
+            <Icon /> {/* Custom height */}
+          </div>
+
         {/* Use justify-center to center the grid items */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center text-center md:text-left">
           {/* Address and Contact Information */}
@@ -53,7 +59,7 @@ const Footer = () => {
 
         {/* Copyright Notice */}
         <div className="text-center mt-8 border-t border-gray-700 pt-8">
-          <p className='font-bold'>Copyrights © 2024 All Rights Reserved by Veerji Mechanical</p>
+          <p className="font-bold">Copyrights © 2024 All Rights Reserved by Veerji Mechanical</p>
         </div>
       </div>
     </footer>

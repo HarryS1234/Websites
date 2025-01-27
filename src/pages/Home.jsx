@@ -1,46 +1,20 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import ServicesSection from "../components/ServicesSection";
+import ServicesSection from "../components/HomeComponents/ServicesSection.jsx";
 import videoFile from "../assets/video1.mp4";
-import CountUpSection from "../components/CountUpSection.jsx";
-import Icon from "../pages/Icon"; // Adjust the path to your Icon component
-import clock from "../assets/clock.png"; // Adjust the path to your clock image
-import BrandsSection from "../components/BrandsSection.jsx";
-import ContactSection from "../components/ContactSection.jsx";
-import ReviewSection from "../components/ReviewsSection.jsx";
-import MapSection from "../components/MapsSection.jsx";
-import Footer from "../components/Footer.jsx";
+import CountUpSection from "../components/HomeComponents/CountUpSection.jsx";
+import BrandsSection from "../components/HomeComponents/BrandsSection.jsx";
+import ContactSection from "../components/ReuseComponents/ContactSection.jsx";
+import ReviewSection from "../components/ReuseComponents/ReviewsSection.jsx";
+import MapSection from "../components/ReuseComponents/MapsSection.jsx";
+import Footer from "../components/ReuseComponents/Footer.jsx";
+import Header from "../components/ReuseComponents/Header.jsx";
+import Navbar from "../components/ReuseComponents/Navbar.jsx";
 
 const Home = () => {
   return (
     <div>
-      <header className="bg-gray-100 text-white">
-        {/* Top Section (Logo and Contact Info) */}
-        <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-6">
-          {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <Icon /> {/* Custom height */}
-          </div>
-
-          {/* Contact Info */}
-          <div className="hidden md:flex items-center space-x-4">
-            <img className="w-12 h-12 md:w-16 md:h-16 mb-10" src={clock} alt="Clock Icon" />
-            <div className="text-right text-black">
-              <div className="text-lg md:text-xl font-bold">
-                24 Hour Repair, Installation & Maintenance Service
-              </div>
-              <ul className="list-none">
-                <li className="text-lg md:text-xl font-bold">Tel: 647-210-6862</li>
-                <li className="text-lg md:text-xl font-bold">Tel: 647-607-2138</li>
-                <li className="text-lg md:text-xl font-bold">Tel: 905-792-3555</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <Navbar />
-
+      <Header />
+      <Navbar/>
       {/* Video Section */}
       <section className="relative h-screen flex items-center justify-center">
         <video
@@ -66,7 +40,9 @@ const Home = () => {
         {/* Main Centered Oval (Slightly Left) */}
         <div className="absolute bg-[#1dbbec] border-2 border-white opacity-90 top-48 md:top-64 left-8 md:left-32 w-[320px] md:w-[580px] h-48 md:h-80 rounded-[50%] flex items-center justify-center">
           <p className="text-center font-semibold text-sm md:text-base px-4 text-gray-50">
-            <span className="font-bold text-xl md:text-2xl">VeerJi Mechanical</span>
+            <span className="font-bold text-xl md:text-2xl">
+              VeerJi Mechanical
+            </span>
             <br />
             is an Authorized Service Centre for
             <br />
@@ -87,11 +63,11 @@ const Home = () => {
 
       <ServicesSection />
       <CountUpSection />
-      <BrandsSection/>
-      <ContactSection/>
-      <ReviewSection/>
-      <MapSection/>
-      <Footer/>
+      <BrandsSection />
+      <ContactSection />
+      <ReviewSection />
+      <MapSection />
+      <Footer />
     </div>
   );
 };

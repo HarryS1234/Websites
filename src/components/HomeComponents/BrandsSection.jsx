@@ -1,21 +1,21 @@
 import React from "react";
 
 // Import your brand logos (replace with actual paths)
-import brand1 from "../assets/Hvac brands/Brand1.png";
-import brand2 from "../assets/Hvac brands/Brand2.png";
-import brand3 from "../assets/Hvac brands/Brand3.png";
-import brand4 from "../assets/Hvac brands/Brand4.png";
-import brand5 from "../assets/Hvac brands/Brand5.png";
-import brand6 from "../assets/Hvac brands/Brand6.png";
-import brand7 from "../assets/Hvac brands/Brand7.png";
-import brand8 from "../assets/Hvac brands/Brand8.png";
-import brand9 from "../assets/Hvac brands/Brand9.png";
-import brand10 from "../assets/Hvac brands/Brand10.png";
-import brand11 from "../assets/Hvac brands/Brand11.png";
-import brand12 from "../assets/Hvac brands/Brand12.png";
-import brand13 from "../assets/Hvac brands/Brand13.png";
-import brand14 from "../assets/Hvac brands/Brand14.png";
-import brand15 from "../assets/Hvac brands/Brand15.png";
+import brand1 from "../../assets/Hvac brands/Brand1.png";
+import brand2 from "../../assets/Hvac brands/Brand2.png";
+import brand3 from "../../assets/Hvac brands/Brand3.png";
+import brand4 from "../../assets/Hvac brands/Brand4.png";
+import brand5 from "../../assets/Hvac brands/Brand5.png";
+import brand6 from "../../assets/Hvac brands/Brand6.png";
+import brand7 from "../../assets/Hvac brands/Brand7.png";
+import brand8 from "../../assets/Hvac brands/Brand8.png";
+import brand9 from "../../assets/Hvac brands/Brand9.png";
+import brand10 from "../../assets/Hvac brands/Brand10.png";
+import brand11 from "../../assets/Hvac brands/Brand11.png";
+import brand12 from "../../assets/Hvac brands/Brand12.png";
+import brand13 from "../../assets/Hvac brands/Brand13.png";
+import brand14 from "../../assets/Hvac brands/Brand14.png";
+import brand15 from "../../assets/Hvac brands/Brand15.png";
 
 const BrandsSection = () => {
   // Array of all brand logos
