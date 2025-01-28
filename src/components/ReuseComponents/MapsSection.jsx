@@ -3,7 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 const MapSection = () => {
   const mapRef = useRef(null); // Reference to the map container
   const [mapError, setMapError] = useState(null); // State to handle map loading errors
-  const API_KEY = "AIzaSyBDYWraGePojYiu1j9VBzVBLVLpgWzCpGE"; // Replace with your actual API key
+
+
 
   useEffect(() => {
     // Check if the Google Maps script is already loaded
@@ -14,7 +15,7 @@ const MapSection = () => {
 
     // Dynamically load the Google Maps script
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_MAPS_API_KEY}&callback=initMap`;
     script.async = true;
     script.onerror = () => {
       setMapError("Failed to load Google Maps script. Please check your network connection or API key.");
@@ -37,13 +38,13 @@ const MapSection = () => {
         const marker = new window.google.maps.Marker({
           position: location,
           map: map,
-          title: "Veerji Cooling Comforts Inc.",
+          title: "Veerji Mechanical"
         });
 
         // Info window content for Veerji Cooling Comforts Inc.
         const contentString = `
           <div style="font-family: Arial, sans-serif; font-size: 14px; color: #333;">
-            <h3 style="margin: 0; padding: 0; font-size: 16px;">Veerji Cooling Comforts Inc.</h3>
+            <h3 style="margin: 0; padding: 0; font-size: 16px;">Veerji Mechanical</h3>
             <p><span style="color: gold;">&#9733;</span> 4.5 (Google reviews)</p>
             <p>Establishment in Brampton, Ontario</p>
             <p><strong>Address:</strong> 2500 Williams Pkwy Unit #12, Brampton, ON L6S 5M9</p>
@@ -82,7 +83,7 @@ const MapSection = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 py-12"> {/* Gray background to match your theme */}
+    <div className="bg-gray-100 mt-10 py-12"> {/* Gray background to match your theme */}
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Our Location</h2>
         {mapError ? (
@@ -90,7 +91,7 @@ const MapSection = () => {
         ) : (
           <div
             ref={mapRef}
-            style={{ width: '100%', height: '400px' }} // Responsive height
+            style={{ width: '100%', height: '600px' }} // Responsive height
             className="rounded-lg shadow-lg"
           ></div>
         )}

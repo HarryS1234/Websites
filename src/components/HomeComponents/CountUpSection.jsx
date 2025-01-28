@@ -100,15 +100,15 @@ const CountUpSection = () => {
             </p>
           </div>
         </div>
-
-        {/* Bottom Text */}
-        <p className="text-gray-600 mt-12 font-bold text-lg md:text-xl">
+ {/* Bottom Text */}
+ <p className="text-gray-600 mt-12 font-bold text-lg md:text-xl">
           Your trusted partner for reliable commercial refrigeration, heating, and AC solutions to
           keep your business running smoothly.
         </p>
         <p className="text-gray-600 mt-4 font-bold text-lg md:text-xl">
           We provide our clients with trusted, top-brand HVAC equipment for unmatched reliability.
         </p>
+       
       </div>
     </section>
   );

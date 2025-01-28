@@ -53,3 +53,18 @@ html, body {
 .animate-marquee-reverse {
   animation: marquee-reverse 12s linear infinite;
 }
+
+@keyframes vanMove {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(100vw); /* Move to the right edge of the viewport */
+  }
+}
+
+.van {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}

@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Navbar/>
+      <Navbar />
       {/* Video Section */}
-      <section className="relative h-screen flex items-center justify-center">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <video
           autoPlay
           muted
@@ -28,9 +28,9 @@ const Home = () => {
         </video>
 
         {/* Left Side Ovals */}
-        <div className="absolute flex flex-col space-y-8 top-16 md:top-32 left-4 md:left-16">
+        <div className="absolute flex flex-col space-y-4 sm:space-y-8 top-8 sm:top-16 md:top-32 left-4 sm:left-8 md:left-16">
           {/* Serving Businesses Oval */}
-          <div className="bg-[#1dbbec] opacity-90 w-[280px] md:w-[400px] h-32 md:h-48 rounded-[50%] flex items-center justify-center text-white font-bold p-4 text-center text-lg md:text-2xl border-2 border-white">
+          <div className="bg-[#1dbbec] opacity-90 w-[240px] sm:w-[280px] md:w-[400px] h-32 sm:h-32 md:h-48 rounded-[50%] flex items-center justify-center text-white font-bold p-4 text-center text-sm sm:text-lg md:text-2xl border-2 border-white">
             Serving Businesses
             <br />
             From Last 30 Years
@@ -38,15 +38,15 @@ const Home = () => {
         </div>
 
         {/* Main Centered Oval (Slightly Left) */}
-        <div className="absolute bg-[#1dbbec] border-2 border-white opacity-90 top-48 md:top-64 left-8 md:left-32 w-[320px] md:w-[580px] h-48 md:h-80 rounded-[50%] flex items-center justify-center">
-          <p className="text-center font-semibold text-sm md:text-base px-4 text-gray-50">
-            <span className="font-bold text-xl md:text-2xl">
+        <div className="absolute bg-[#1dbbec] border-2 border-white opacity-90 top-32 sm:top-48 md:top-64 left-4 sm:left-8 md:left-32 w-[280px] sm:w-[320px] md:w-[580px] h-48 sm:h-48 md:h-80 rounded-[50%] flex items-center justify-center">
+          <p className="text-center font-semibold text-xs sm:text-sm md:text-base px-4 text-gray-50">
+            <span className="font-bold text-lg sm:text-xl md:text-2xl">
               VeerJi Mechanical
             </span>
             <br />
             is an Authorized Service Centre for
             <br />
-            <span className="font-bold text-xl md:text-2xl">
+            <span className="font-bold text-lg sm:text-xl md:text-2xl">
               Commercial Refrigeration,
             </span>
             <br />
